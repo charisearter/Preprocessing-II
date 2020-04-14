@@ -205,6 +205,11 @@ header .logo {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 500px) {
+  header {
+    background-color: red;
+  }
+}
 .home .cta .text-content {
   padding: 2% 0;
   border-bottom: 2px dashed #C0C0C0;
