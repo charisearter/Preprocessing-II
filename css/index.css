@@ -255,3 +255,14 @@ header .logo {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  width: 80%;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  padding: 5% 0%;
+  text-align: center;
+  font-size: 1.8rem;
+}
