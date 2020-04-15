@@ -133,14 +133,16 @@ html {
   font-size: 62.5%;
 }
 html,
-body {
+body,
+textarea {
   font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+label {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
@@ -167,6 +169,11 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+label {
+  font-size: 1.7rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 .links {
   justify-content: flex-end;
@@ -360,4 +367,48 @@ header .logo {
     width: 100%;
     align-self: center;
   }
+}
+.home .form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.3rem;
+  width: 85%;
+  max-width: 500px;
+  padding: 5% 0;
+  border-radius: 10px;
+  border: 2px dashed #C0C0C0;
+  margin: 0 auto;
+}
+.home .form .txtb {
+  padding: 2%;
+}
+.home .form h2 {
+  text-align: center;
+}
+.home .form input,
+.home .form textarea {
+  width: 100%;
+  line-height: 3rem;
+  border: none;
+}
+.home .form label {
+  color: #212529;
+  font-weight: bolder;
+  width: 100%;
+}
+.home .form a {
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  width: 80%;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  padding: 5% 0%;
+  text-align: center;
+  font-size: 1.8rem;
+  width: 100%;
+  cursor: pointer;
 }

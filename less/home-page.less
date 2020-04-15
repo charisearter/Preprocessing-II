@@ -152,7 +152,42 @@ header {
       }
     }//closes button class
   }//closes destination
-
   
 }
+.form {
+  .flexin(row, wrap, center, center);
+  line-height: 2.3rem;
+  width: 85%;
+  max-width: 500px;
+  padding: 5% 0;
+  border-radius: 10px;
+  border: 2px dashed @navigation-border;
+  margin: 0 auto;
+  
+.txtb {
+  padding: 2%;
+}
+
+  h2 {
+    text-align:center;
+  }
+input, textarea {
+  width: 100%;
+  line-height: 3rem;
+  border: none;
+}
+  
+  label {
+    color:@font-color;
+    font-weight: bolder;
+    width: 100%;
+
+  }
+
+  a {
+    .buttons();
+    width: 100%;
+    cursor: pointer;
+  }  
+}//close form
 }// home
