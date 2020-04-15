@@ -30,10 +30,17 @@ header {
 
 .home {
 
+@media @phone {
+  .flexin(column, wrap, center, center);
+  padding: 0 5%;
+}//end query mobile
+
 .cta {
   .text-content {
-    padding: 2% 0;
+    padding: 3% 0;
     border-bottom: 2px dashed @silver;
+
+
   }
 }
 
@@ -43,17 +50,35 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   
+  @media @phone {
+    margin-top: 5%; 
+  }//end mobile for content
+  
   .text-content {
     width: 48%;
     padding-right: 1%;
-  }
+
+    @media @phone {
+      width: 100%;
+    }//end mobile
+  }//end text
 
   .img-content {
     width: 48%;
     padding-left: 1%;
 
+    @media @phone {
+      .flexin(column, nowrap, center, center);
+      width: 100%;
+      padding: 0;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @phone {
+        width: 100%;
+      }//close media
     }//close img
   }//closes img content
 } //closes content-section
@@ -61,21 +86,37 @@ header {
 .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed @navigation-border;
+  
+  @media @phone {
+    margin-top: 0;
+    
+  }
 
   .text-content {
     padding-left: 1%;
     padding-right: 0;
+
+ 
+
   }
 
   .img-content {
     padding-right: 1%;
     padding-left: 0;
-  }
-}
+
+    @media @phone {
+      order: 2;
+    }//end mobile
+  }//end img content
+}//end inverse content
 
 .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+
+  @media @phone{
+    width: 100%;
+  }
 
   img {
     border-radius: 10px;
@@ -88,12 +129,27 @@ header {
   display: flex;
   justify-content: space-between;
 
+  @media @phone {
+    .flexin(column, wrap, center, center);
+  
+  }
+
   .destination {
     width: 30%;
     margin-bottom: 30px;
 
+    @media @phone {
+      width:80%;
+      .flexin(column, wrap, start, start);
+      
+    }//end mobile
     .btn {
       .buttons();
+      @media @phone {
+        width: 100%;
+
+        align-self: center;
+      }
     }//closes button class
   }//closes destination
 
